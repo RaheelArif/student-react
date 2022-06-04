@@ -16,6 +16,12 @@
   padding: 10px;
   background-color: rgb(24, 24, 255);
   color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.header a{
+  color: white;
+  text-decoration: none;
 }
 .footer {
   text-align: center;

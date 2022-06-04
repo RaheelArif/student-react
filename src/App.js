@@ -1,18 +1,19 @@
 import "./App.css";
-import Number from "./components/Number";
-import Header from "./components/Heaader";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import PLayland from "./pages/PLayland";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Students from "./pages/Students";
 
 function App() {
   return (
-    <div style={{ height: "100%" }}>
-      <Header />
-      {/* <Home /> */}
-      <PLayland />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/playland" element={<PLayland />} />
+        <Route path="/students" element={<Students />} />
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 
