@@ -10,18 +10,21 @@ export default function Students() {
     { name: "akbar", class: 10 },
     { name: "aslam", class: 10 },
   ]);
+
   return (
     <div className="home-c">
       <Heaader />
-      <h1>all studens</h1>
-      {students.map((std) => {
-        return (
-          <div className="studentbox">
-            <p>name = {std.name}</p>
-            <p>class = {std.class}</p>
-          </div>
-        );
-      })}
+      <h1>class 12</h1>
+      {students
+        .filter((f) => f.name === "akbar")
+        .map((std) => {
+          return (
+            <div className="studentbox">
+              <p>name = {std.name}</p>
+              <p>class = {std.class}</p>
+            </div>
+          );
+        })}
 
       <Footer />
     </div>
