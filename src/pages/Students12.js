@@ -16,7 +16,7 @@ export default function Students() {
       <Heaader />
       <h1>class 12</h1>
       {students
-        .filter((f) => f.name === "akbar")
+        .filter((f) => f.class === 12)
         .map((std) => {
           return (
             <div className="studentbox">

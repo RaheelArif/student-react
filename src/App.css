@@ -45,3 +45,14 @@
   border: 1px solid rgb(0, 0, 0);
   
 }
+.logo-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.red1{
+  color: red;
+}
+.green1{
+  color: green;
+}
